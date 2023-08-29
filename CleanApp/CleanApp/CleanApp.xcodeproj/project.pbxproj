@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0086DEA82A9E1E760012A493 /* CleanApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0086DEA72A9E1E760012A493 /* CleanApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0086DEBB2A9E20CE0012A493 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBA2A9E20CE0012A493 /* AddAccount.swift */; };
+		0086DEBD2A9E220A0012A493 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBC2A9E220A0012A493 /* AccountModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0086DEA42A9E1E760012A493 /* CleanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DEA72A9E1E760012A493 /* CleanApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CleanApp.h; sourceTree = "<group>"; };
 		0086DEB32A9E1F040012A493 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0086DEBA2A9E20CE0012A493 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
+		0086DEBC2A9E220A0012A493 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		0086DEB42A9E1F040012A493 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				0086DEBA2A9E20CE0012A493 /* AddAccount.swift */,
+				0086DEBC2A9E220A0012A493 /* AccountModel.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -138,6 +144,7 @@
 					};
 					0086DEB22A9E1F040012A493 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -189,6 +196,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0086DEBB2A9E20CE0012A493 /* AddAccount.swift in Sources */,
+				0086DEBD2A9E220A0012A493 /* AccountModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +381,7 @@
 		0086DEB82A9E1F040012A493 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -394,6 +404,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -401,6 +412,7 @@
 		0086DEB92A9E1F040012A493 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
