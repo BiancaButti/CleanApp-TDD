@@ -27,14 +27,16 @@ protocol HttpPostClient {
 
 class RemoteAddAccountTests: XCTestCase {
 
-    func test_()  {
+    func test_add_should_call_httpClient_with_correct_url()  {
         let url = URL(string: "http://any-url.com")!
         let httpClientSpy = HttpClientSpy()
         let sut = remoteAddAccount(url: url, httpClient: httpClientSpy)
         sut.add()
         XCTAssertEqual(httpClientSpy.url, url)
     }
+}
 
+extension RemoteAddAccountTests {
     class HttpClientSpy: HttpPostClient {
         var url: URL?
         func post(url: URL) {
