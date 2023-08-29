@@ -13,6 +13,7 @@
 		0086DED02A9E22C30012A493 /* RemoteAddAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DECF2A9E22C30012A493 /* RemoteAddAccountTests.swift */; };
 		0086DED92A9E231A0012A493 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEB32A9E1F040012A493 /* Domain.framework */; };
 		0086DEDA2A9E231A0012A493 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEB32A9E1F040012A493 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0086DEE12A9E77A70012A493 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEE02A9E77A70012A493 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0086DEC32A9E22C20012A493 /* DataLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DECA2A9E22C30012A493 /* DataLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DECF2A9E22C30012A493 /* RemoteAddAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccountTests.swift; sourceTree = "<group>"; };
+		0086DEE02A9E77A70012A493 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				0086DEBA2A9E20CE0012A493 /* AddAccount.swift */,
 				0086DEBC2A9E220A0012A493 /* AccountModel.swift */,
+				0086DEE02A9E77A70012A493 /* Model.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0086DEE12A9E77A70012A493 /* Model.swift in Sources */,
 				0086DEBB2A9E20CE0012A493 /* AddAccount.swift in Sources */,
 				0086DEBD2A9E220A0012A493 /* AccountModel.swift in Sources */,
 			);
