@@ -1,10 +1,9 @@
 //
-//  AlamofireAdapterTests.swift
-//  DataLayerTests
+//  InfraTests.swift
+//  InfraTests
 //
 //  Created by Bianca on 30/08/23.
 //
-
 import XCTest
 import Alamofire
 
@@ -16,26 +15,36 @@ class AlamofireAdapter {
     }
     
     func post(to url: URL) {
-        session.request(url).resume()
+        session.request(url, method: .post).resume()
     }
 }
 
 class AlamofireAdapterTests: XCTestCase {
-    func test_() {
+    func test_post_should_make_request_with_valid_url_and_method() {
         let url = makeUrl()
         let configuration = URLSessionConfiguration.default
         configuration.protocolClasses = [UrlProtocolStub.self]
         let session = Session(configuration: configuration)
         let sut = AlamofireAdapter(session: session)
         sut.post(to: url)
-        XCTAssertEqual(url, UrlProtocolStub.url)
+        let exp = expectation(description: "waiting")
+        UrlProtocolStub.observerRequest { request in
+            XCTAssertEqual(url, request.url)
+            XCTAssertEqual("POST", request.httpMethod)
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 1)
     }
 
 }
 
 class UrlProtocolStub: URLProtocol {
     
-    static var url: URL?
+    static var emit: ((URLRequest) -> Void)?
+    
+    static func observerRequest(completion: @escaping (URLRequest) -> Void) {
+        UrlProtocolStub.emit = completion
+    }
     
     override open class func canInit(with request: URLRequest) -> Bool {
         return true
@@ -46,7 +55,7 @@ class UrlProtocolStub: URLProtocol {
     }
 
     override open func startLoading() {
-        UrlProtocolStub.url = request.url
+        UrlProtocolStub.emit?(request)
     }
     
     override open func stopLoading() {
