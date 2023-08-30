@@ -1,9 +1,10 @@
 //
-//  InfraTests.swift
-//  InfraTests
+//  AlamofireAdapterTests.swift
+//  DataLayerTests
 //
 //  Created by Bianca on 30/08/23.
 //
+
 import XCTest
 import Alamofire
 
@@ -27,23 +28,14 @@ class AlamofireAdapterTests: XCTestCase {
         let session = Session(configuration: configuration)
         let sut = AlamofireAdapter(session: session)
         sut.post(to: url)
-        let exp = expectation(description: "waiting")
-        UrlProtocolStub.observerRequest { request in
-            XCTAssertEqual(url, request.url)
-            exp.fulfill()
-        }
-        wait(for: [exp], timeout: 1)
+        XCTAssertEqual(url, UrlProtocolStub.url)
     }
 
 }
 
 class UrlProtocolStub: URLProtocol {
     
-    static var emit: ((URLRequest) -> Void)?
-    
-    static func observerRequest(completion: @escaping (URLRequest) -> Void) {
-        UrlProtocolStub.emit = completion
-    }
+    static var url: URL?
     
     override open class func canInit(with request: URLRequest) -> Bool {
         return true
@@ -54,7 +46,7 @@ class UrlProtocolStub: URLProtocol {
     }
 
     override open func startLoading() {
-        UrlProtocolStub.emit?(request)
+        UrlProtocolStub.url = request.url
     }
     
     override open func stopLoading() {
