@@ -40,7 +40,7 @@ class AlamofireAdapterTests: XCTestCase {
             XCTAssertNil(request.httpBodyStream)
         }
     }
-    
+ 
     func test_post_should_complete_with_error_when_request_completes_with_error() {
         let sut = makeSut()
         UrlProtocolStub.simulate(data: nil, response: nil, error: makeError())
@@ -56,6 +56,7 @@ class AlamofireAdapterTests: XCTestCase {
         }
         wait(for: [exp], timeout: 1)
     }
+    
 }
 
 extension AlamofireAdapterTests {
@@ -70,13 +71,12 @@ extension AlamofireAdapterTests {
     
     func testRequestFor(url: URL = makeUrl(), data: Data?, action: @escaping (URLRequest) -> Void) {
         let sut = makeSut()
-        sut.post(to: url, with: data) { _ in}
         let exp = expectation(description: "waiting")
-        UrlProtocolStub.observerRequest { request in
-            action(request)
-            exp.fulfill()
-        }
+        sut.post(to: url, with: data) { _ in exp.fulfill() }
+        var request: URLRequest?
+        UrlProtocolStub.observerRequest { request = $0 }
         wait(for: [exp], timeout: 1)
+        action(request!)
     }
 }
 
