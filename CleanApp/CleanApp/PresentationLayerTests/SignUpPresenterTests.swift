@@ -55,6 +55,13 @@ class SignUpPresenterTests: XCTestCase {
 }
 
 extension SignUpPresenterTests {
+    
+    func makeSut() -> (sut: SignUpPresenter, alertViewSpy: AlertViewSpy) {
+        let alertViewSpy = AlertViewSpy()
+        let sut = SignUpPresenter(alertView: alertViewSpy)
+        return (sut, alertViewSpy)
+    }
+    
     class AlertViewSpy: AlertView {
         
         var viewModel: AlertViewModel?
