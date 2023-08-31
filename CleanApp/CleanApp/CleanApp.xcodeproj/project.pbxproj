@@ -13,6 +13,8 @@
 		004894692AA0D5E200718990 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEC32A9E22C20012A493 /* DataLayer.framework */; };
 		004894802AA102D100718990 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; };
 		004894852AA102D200718990 /* SignUpPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004894842AA102D200718990 /* SignUpPresenterTests.swift */; };
+		0048948E2AA10ECD00718990 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048948D2AA10ECD00718990 /* SignUpPresenter.swift */; };
+		004894932AA10F8100718990 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004894922AA10F8100718990 /* AlertView.swift */; };
 		004BD8362A9F63B0008640B4 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8352A9F63B0008640B4 /* DomainError.swift */; };
 		004BD8392A9F65CE008640B4 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8382A9F65CE008640B4 /* HttpError.swift */; };
 		004BD83C2A9F6E55008640B4 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */; };
@@ -66,6 +68,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 004894772AA102D100718990;
 			remoteInfo = PresentationLayer;
+		};
+		0048948F2AA10F0A00718990 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086DEB22A9E1F040012A493;
+			remoteInfo = Domain;
 		};
 		004BD8552A9FA762008640B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -130,6 +139,8 @@
 		004894782AA102D100718990 /* PresentationLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PresentationLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0048947F2AA102D100718990 /* PresentationLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentationLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		004894842AA102D200718990 /* SignUpPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenterTests.swift; sourceTree = "<group>"; };
+		0048948D2AA10ECD00718990 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		004894922AA10F8100718990 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		004BD8352A9F63B0008640B4 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		004BD8382A9F65CE008640B4 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
@@ -253,6 +264,9 @@
 		004894792AA102D100718990 /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				004894942AA10F9700718990 /* Presenters */,
+				004894912AA10F6E00718990 /* View */,
+				0048948D2AA10ECD00718990 /* SignUpPresenter.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -260,9 +274,32 @@
 		004894832AA102D200718990 /* PresentationLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				004894952AA1104E00718990 /* Presenters */,
 				004894842AA102D200718990 /* SignUpPresenterTests.swift */,
 			);
 			path = PresentationLayerTests;
+			sourceTree = "<group>";
+		};
+		004894912AA10F6E00718990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				004894922AA10F8100718990 /* AlertView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		004894942AA10F9700718990 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		004894952AA1104E00718990 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		004BD8342A9F639F008640B4 /* Errors */ = {
@@ -516,6 +553,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				004894902AA10F0A00718990 /* PBXTargetDependency */,
 			);
 			name = PresentationLayer;
 			productName = PresentationLayer;
@@ -670,6 +708,7 @@
 					};
 					004894772AA102D100718990 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 					0048947E2AA102D100718990 = {
 						CreatedOnToolsVersion = 14.2;
@@ -805,6 +844,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0048948E2AA10ECD00718990 /* SignUpPresenter.swift in Sources */,
+				004894932AA10F8100718990 /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -899,6 +940,11 @@
 			target = 004894772AA102D100718990 /* PresentationLayer */;
 			targetProxy = 004894812AA102D100718990 /* PBXContainerItemProxy */;
 		};
+		004894902AA10F0A00718990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086DEB22A9E1F040012A493 /* Domain */;
+			targetProxy = 0048948F2AA10F0A00718990 /* PBXContainerItemProxy */;
+		};
 		004BD8562A9FA762008640B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 004BD84B2A9FA761008640B4 /* Infra */;
@@ -957,6 +1003,7 @@
 		004894882AA102D200718990 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -979,6 +1026,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -986,6 +1034,7 @@
 		004894892AA102D200718990 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1015,6 +1064,7 @@
 		0048948B2AA102D200718990 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -1031,6 +1081,7 @@
 		0048948C2AA102D200718990 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
