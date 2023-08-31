@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0048945C2AA0D01700718990 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048945B2AA0D01700718990 /* AlamofireAdapter.swift */; };
 		004BD8362A9F63B0008640B4 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8352A9F63B0008640B4 /* DomainError.swift */; };
 		004BD8392A9F65CE008640B4 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8382A9F65CE008640B4 /* HttpError.swift */; };
 		004BD83C2A9F6E55008640B4 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */; };
@@ -89,6 +90,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0048945B2AA0D01700718990 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		004BD8352A9F63B0008640B4 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		004BD8382A9F65CE008640B4 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
@@ -162,6 +164,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0048945D2AA0D0D300718990 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				0048945B2AA0D01700718990 /* AlamofireAdapter.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		004BD8342A9F639F008640B4 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +217,7 @@
 		004BD84D2A9FA761008640B4 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				0048945D2AA0D0D300718990 /* Http */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -590,6 +601,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0048945C2AA0D01700718990 /* AlamofireAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,6 +746,7 @@
 		004BD85F2A9FA763008640B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -750,6 +763,7 @@
 		004BD8602A9FA763008640B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
