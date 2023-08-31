@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0048945C2AA0D01700718990 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048945B2AA0D01700718990 /* AlamofireAdapter.swift */; };
+		004894602AA0D1C400718990 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048945F2AA0D1C400718990 /* UrlProtocolStub.swift */; };
 		004BD8362A9F63B0008640B4 /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8352A9F63B0008640B4 /* DomainError.swift */; };
 		004BD8392A9F65CE008640B4 /* HttpError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8382A9F65CE008640B4 /* HttpError.swift */; };
 		004BD83C2A9F6E55008640B4 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */; };
@@ -91,6 +92,7 @@
 
 /* Begin PBXFileReference section */
 		0048945B2AA0D01700718990 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
+		0048945F2AA0D1C400718990 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		004BD8352A9F63B0008640B4 /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
 		004BD8382A9F65CE008640B4 /* HttpError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpError.swift; sourceTree = "<group>"; };
 		004BD83B2A9F6E55008640B4 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		0048945E2AA0D1B600718990 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				0048945F2AA0D1C400718990 /* UrlProtocolStub.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		004BD8342A9F639F008640B4 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +235,7 @@
 		004BD8572A9FA763008640B4 /* InfraTests */ = {
 			isa = PBXGroup;
 			children = (
+				0048945E2AA0D1B600718990 /* Http */,
 				004BD8582A9FA763008640B4 /* AlamofireAdapterTests.swift */,
 			);
 			path = InfraTests;
@@ -612,6 +623,7 @@
 				004BD86C2A9FA8C1008640B4 /* TestFactories.swift in Sources */,
 				004BD8592A9FA763008640B4 /* AlamofireAdapterTests.swift in Sources */,
 				004BD86B2A9FA8B3008640B4 /* TestExtensions.swift in Sources */,
+				004894602AA0D1C400718990 /* UrlProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
