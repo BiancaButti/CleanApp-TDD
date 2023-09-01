@@ -12,6 +12,12 @@ func makeAccountModel() -> AccountModel {
     return AccountModel(id: "any_id",
                         name: "Bianca",
                         email: "bianca@mail.com",
-                        password: "123456"
-    )
+                        password: "123456")
+}
+
+func makeAddAccountModel() -> AddAccountModel {
+    return AddAccountModel(name: "Bianca",
+                           email: "bianca@mail.com",
+                           password: "123456",
+                           passwordConfirmation: "123456")
 }

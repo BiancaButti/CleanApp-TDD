@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Domain
 import PresentationLayer
 
 class SignUpPresenterTests: XCTestCase {
@@ -61,12 +62,19 @@ class SignUpPresenterTests: XCTestCase {
         sut.signUp(viewModel: makeSignUp())
         XCTAssertEqual(emailValidatorSpy.email, "any_email@mi.com")
     }
+    
+    func test_signUp_shoul_call_addAccount_with_correct_values() {
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSut(addAccount: addAccountSpy)
+        sut.signUp(viewModel: makeSignUp())
+//        XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
+    }
 }
 
 extension SignUpPresenterTests {
     
-    func makeSut(alertViewSpy: AlertViewSpy = AlertViewSpy(), emailValidatorSpy: EmailValidatorSpy = EmailValidatorSpy()) -> SignUpPresenter {
-        let sut = SignUpPresenter(alertView: alertViewSpy, emailValidator: emailValidatorSpy)
+    func makeSut(alertViewSpy: AlertViewSpy = AlertViewSpy(), emailValidatorSpy: EmailValidatorSpy = EmailValidatorSpy(), addAccount: AddAccountSpy = AddAccountSpy()) -> SignUpPresenter {
+        let sut = SignUpPresenter(alertView: alertViewSpy, emailValidator: emailValidatorSpy, addAccount: addAccount)
         return sut
     }
     
@@ -108,6 +116,14 @@ extension SignUpPresenterTests {
         
         func simulateInvalidEmail() {
             isValid = false
+        }
+    }
+    
+    class AddAccountSpy: AddAccount {
+        var addAccountModel: AddAccountModel?
+        
+        func add(addAccountModel: AddAccountModel, completion: @escaping (Result<AccountModel, DomainError>) -> Void) {
+            self.addAccountModel = addAccountModel
         }
     }
 }
