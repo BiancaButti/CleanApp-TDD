@@ -29,6 +29,8 @@
 		004BD8662A9FA884008640B4 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEC32A9E22C20012A493 /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		004BD86B2A9FA8B3008640B4 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83E2A9F83F9008640B4 /* TestExtensions.swift */; };
 		004BD86C2A9FA8C1008640B4 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8402A9F844B008640B4 /* TestFactories.swift */; };
+		007461B02AA2545E00A3FAEE /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8452A9F84DA008640B4 /* AccountModelFactory.swift */; };
+		007461B12AA2548000A3FAEE /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83E2A9F83F9008640B4 /* TestExtensions.swift */; };
 		0075E41F2A9FB1F400091AD5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0075E41E2A9FB1F400091AD5 /* Alamofire */; };
 		0086DEBB2A9E20CE0012A493 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBA2A9E20CE0012A493 /* AddAccount.swift */; };
 		0086DEBD2A9E220A0012A493 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBC2A9E220A0012A493 /* AccountModel.swift */; };
@@ -277,6 +279,7 @@
 		004894832AA102D200718990 /* PresentationLayerTests */ = {
 			isa = PBXGroup;
 			children = (
+				007461AF2AA2543E00A3FAEE /* Helpers */,
 				004894952AA1104E00718990 /* Presenters */,
 				004894842AA102D200718990 /* SignUpPresenterTests.swift */,
 			);
@@ -370,6 +373,13 @@
 				004BD8582A9FA763008640B4 /* AlamofireAdapterTests.swift */,
 			);
 			path = InfraTests;
+			sourceTree = "<group>";
+		};
+		007461AF2AA2543E00A3FAEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		0086DE9A2A9E1E760012A493 = {
@@ -865,6 +875,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007461B02AA2545E00A3FAEE /* AccountModelFactory.swift in Sources */,
+				007461B12AA2548000A3FAEE /* TestExtensions.swift in Sources */,
 				004894852AA102D200718990 /* SignUpPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

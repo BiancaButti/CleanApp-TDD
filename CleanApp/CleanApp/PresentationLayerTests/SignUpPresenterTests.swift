@@ -89,14 +89,14 @@ class SignUpPresenterTests: XCTestCase {
         let emailValidatorSpy = EmailValidatorSpy()
         let sut = makeSut(emailValidatorSpy: emailValidatorSpy)
         sut.signUp(viewModel: makeSignUp())
-        XCTAssertEqual(emailValidatorSpy.email, "any_email@mi.com")
+        XCTAssertEqual(emailValidatorSpy.email, "bianca@mail.com")
     }
     
     func test_signUp_shoul_call_addAccount_with_correct_values() {
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(addAccount: addAccountSpy)
         sut.signUp(viewModel: makeSignUp())
-//        XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
+        XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
     }
     
     func test_signUp_shoul_show_error_message_if_addAccount_fails() {
@@ -116,13 +116,15 @@ class SignUpPresenterTests: XCTestCase {
 
 extension SignUpPresenterTests {
     
-    func makeSut(alertViewSpy: AlertViewSpy = AlertViewSpy(), emailValidatorSpy: EmailValidatorSpy = EmailValidatorSpy(), addAccount: AddAccountSpy = AddAccountSpy()) -> SignUpPresenter {
+    func makeSut(alertViewSpy: AlertViewSpy = AlertViewSpy(), emailValidatorSpy: EmailValidatorSpy = EmailValidatorSpy(),
+                 addAccount: AddAccountSpy = AddAccountSpy(), file: StaticString = #file, line: UInt = #line) -> SignUpPresenter {
         let sut = SignUpPresenter(alertView: alertViewSpy, emailValidator: emailValidatorSpy, addAccount: addAccount)
+        checkMemoryLeak(for: sut, file: file, line: line)
         return sut
     }
     
-    func makeSignUp(name: String? = "teste", email: String? = "any_email@mi.com",
-                    password: String? = "123", passwordConfirmation: String? = "123") -> SignUpViewModel {
+    func makeSignUp(name: String? = "Bianca", email: String? = "bianca@mail.com",
+                    password: String? = "123456", passwordConfirmation: String? = "123456") -> SignUpViewModel {
         return SignUpViewModel(name: name,
                                email: email,
                                password: password,
