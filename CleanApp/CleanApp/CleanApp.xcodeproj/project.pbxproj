@@ -216,7 +216,7 @@
 		0093E7492AAB98FA001C30A3 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0093E74E2AAB98FA001C30A3 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		0093E7622AAB9D75001C30A3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		0093E7622AAB9D75001C30A3 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignUp.storyboard; path = UI/SignUp.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -616,8 +616,7 @@
 		0093E7432AAB98F9001C30A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */,
-				0093E7622AAB9D75001C30A3 /* SignUp.storyboard */,
+				00CD23F22AABAB6100007D23 /* Scenes */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -625,9 +624,42 @@
 		0093E74D2AAB98FA001C30A3 /* UITests */ = {
 			isa = PBXGroup;
 			children = (
-				0093E74E2AAB98FA001C30A3 /* SignUpViewControllerTests.swift */,
+				00CD23F32AABAB6E00007D23 /* Scenes */,
 			);
 			path = UITests;
+			sourceTree = "<group>";
+		};
+		0093E7642AABAB0C001C30A3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0093E7622AAB9D75001C30A3 /* SignUp.storyboard */,
+				0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		00CD23F22AABAB6100007D23 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0093E7642AABAB0C001C30A3 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		00CD23F32AABAB6E00007D23 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00CD23F42AABAB7300007D23 /* SignUp */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		00CD23F42AABAB7300007D23 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				0093E74E2AAB98FA001C30A3 /* SignUpViewControllerTests.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
