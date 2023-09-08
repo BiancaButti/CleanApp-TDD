@@ -31,6 +31,7 @@
 		004BD86C2A9FA8C1008640B4 /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8402A9F844B008640B4 /* TestFactories.swift */; };
 		007461B02AA2545E00A3FAEE /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8452A9F84DA008640B4 /* AccountModelFactory.swift */; };
 		007461B12AA2548000A3FAEE /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83E2A9F83F9008640B4 /* TestExtensions.swift */; };
+		007461B32AA256BF00A3FAEE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007461B22AA256BF00A3FAEE /* LoadingView.swift */; };
 		0075E41F2A9FB1F400091AD5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0075E41E2A9FB1F400091AD5 /* Alamofire */; };
 		0086DEBB2A9E20CE0012A493 /* AddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBA2A9E20CE0012A493 /* AddAccount.swift */; };
 		0086DEBD2A9E220A0012A493 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEBC2A9E220A0012A493 /* AccountModel.swift */; };
@@ -155,6 +156,7 @@
 		004BD84C2A9FA761008640B4 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		004BD8532A9FA762008640B4 /* InfraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		004BD8582A9FA763008640B4 /* AlamofireAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapterTests.swift; sourceTree = "<group>"; };
+		007461B22AA256BF00A3FAEE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0086DEA42A9E1E760012A493 /* CleanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DEB32A9E1F040012A493 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DEBA2A9E20CE0012A493 /* AddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccount.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				004894922AA10F8100718990 /* AlertView.swift */,
+				007461B22AA256BF00A3FAEE /* LoadingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -866,6 +869,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0048948E2AA10ECD00718990 /* SignUpPresenter.swift in Sources */,
+				007461B32AA256BF00A3FAEE /* LoadingView.swift in Sources */,
 				004894932AA10F8100718990 /* AlertView.swift in Sources */,
 				004894982AA1162200718990 /* EmailValidator.swift in Sources */,
 			);
