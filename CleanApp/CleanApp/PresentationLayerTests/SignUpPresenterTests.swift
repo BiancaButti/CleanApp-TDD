@@ -132,6 +132,20 @@ class SignUpPresenterTests: XCTestCase {
         addAccountSpy.completeWithError(.unexpected)
         wait(for: [exp2], timeout: 1)
     }
+    
+    func test_signUp_shoul_show_success_message_if_addAccount_succeeds() {
+        let alertViewSpy = AlertViewSpy()
+        let addAccountSpy = AddAccountSpy()
+        let sut = makeSut(alertViewSpy: alertViewSpy, addAccount: addAccountSpy)
+        let exp = expectation(description: "waiting")
+        alertViewSpy.observe { [weak self] viewModel in
+            XCTAssertEqual(viewModel, self?.makeSuccessAlertViewModel(fieldName: "Conta criada com sucesso."))
+            exp.fulfill()
+        }
+        sut.signUp(viewModel: makeSignUp())
+        addAccountSpy.completeWithAccount(makeAccountModel())
+        wait(for: [exp], timeout: 1)
+    }
 }
 
 extension SignUpPresenterTests {
@@ -164,6 +178,11 @@ extension SignUpPresenterTests {
     
     func makeErrorAlertViewModel(fieldName: String) -> AlertViewModel {
         return AlertViewModel(title: "Erro",
+                             message: fieldName)
+    }
+    
+    func makeSuccessAlertViewModel(fieldName: String) -> AlertViewModel {
+        return AlertViewModel(title: "Sucesso",
                              message: fieldName)
     }
     
@@ -204,6 +223,10 @@ extension SignUpPresenterTests {
         
         func completeWithError(_ error: DomainError) {
             completion?(.failure(error))
+        }
+        
+        func completeWithAccount(_ account: AccountModel) {
+            completion?(.success(account))
         }
     }
     
