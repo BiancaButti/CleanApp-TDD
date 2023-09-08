@@ -42,6 +42,7 @@
 		0086DEE12A9E77A70012A493 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEE02A9E77A70012A493 /* Model.swift */; };
 		0086DEE32A9E7A280012A493 /* RemoteAddAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEE22A9E7A280012A493 /* RemoteAddAccount.swift */; };
 		0086DEE52A9E7A780012A493 /* HttpPostClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0086DEE42A9E7A780012A493 /* HttpPostClient.swift */; };
+		0093E72B2AAB8F29001C30A3 /* SignUpMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E72A2AAB8F29001C30A3 /* SignUpMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +168,7 @@
 		0086DEE02A9E77A70012A493 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0086DEE22A9E7A280012A493 /* RemoteAddAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAddAccount.swift; sourceTree = "<group>"; };
 		0086DEE42A9E7A780012A493 /* HttpPostClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpPostClient.swift; sourceTree = "<group>"; };
+		0093E72A2AAB8F29001C30A3 /* SignUpMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,7 +275,6 @@
 				004894962AA1161400718990 /* Validators */,
 				004894942AA10F9700718990 /* Presenters */,
 				004894912AA10F6E00718990 /* View */,
-				0048948D2AA10ECD00718990 /* SignUpPresenter.swift */,
 			);
 			path = PresentationLayer;
 			sourceTree = "<group>";
@@ -300,6 +301,8 @@
 		004894942AA10F9700718990 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				0048948D2AA10ECD00718990 /* SignUpPresenter.swift */,
+				0093E72A2AAB8F29001C30A3 /* SignUpMapper.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -870,6 +873,7 @@
 			files = (
 				0048948E2AA10ECD00718990 /* SignUpPresenter.swift in Sources */,
 				007461B32AA256BF00A3FAEE /* LoadingView.swift in Sources */,
+				0093E72B2AAB8F29001C30A3 /* SignUpMapper.swift in Sources */,
 				004894932AA10F8100718990 /* AlertView.swift in Sources */,
 				004894982AA1162200718990 /* EmailValidator.swift in Sources */,
 			);
