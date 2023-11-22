@@ -54,6 +54,7 @@
 		0093E7572AAB99FE001C30A3 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; platformFilters = (macos, ); };
 		0093E7582AAB99FE001C30A3 /* PresentationLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0093E75D2AAB9C48001C30A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */; };
+		00C593B02B0E6C9500F49A8E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C593AF2B0E6C9500F49A8E /* UIViewControllerExtensions.swift */; };
 		00CD23F72AABABCA00007D23 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD23F62AABABCA00007D23 /* TestExtensions.swift */; };
 		00CD23F92AABAC2100007D23 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CD23F82AABAC2100007D23 /* SignUp.storyboard */; };
 /* End PBXBuildFile section */
@@ -217,6 +218,7 @@
 		0093E7492AAB98FA001C30A3 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0093E74E2AAB98FA001C30A3 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		00C593AF2B0E6C9500F49A8E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		00CD23F62AABABCA00007D23 /* TestExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensions.swift; sourceTree = "<group>"; };
 		00CD23F82AABAC2100007D23 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -618,6 +620,7 @@
 		0093E7432AAB98F9001C30A3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				00C593AE2B0E6C7800F49A8E /* Helpers */,
 				00CD23F22AABAB6100007D23 /* Scenes */,
 			);
 			path = UI;
@@ -639,6 +642,14 @@
 				0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		00C593AE2B0E6C7800F49A8E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				00C593AF2B0E6C9500F49A8E /* UIViewControllerExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		00CD23F22AABAB6100007D23 /* Scenes */ = {
@@ -1194,6 +1205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C593B02B0E6C9500F49A8E /* UIViewControllerExtensions.swift in Sources */,
 				0093E75D2AAB9C48001C30A3 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
