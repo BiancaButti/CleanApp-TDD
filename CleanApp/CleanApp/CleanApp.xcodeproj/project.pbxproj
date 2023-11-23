@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		004056172B0FD5ED00AF6EE1 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004056162B0FD5ED00AF6EE1 /* Environment.swift */; };
 		0048945C2AA0D01700718990 /* AlamofireAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048945B2AA0D01700718990 /* AlamofireAdapter.swift */; };
 		004894602AA0D1C400718990 /* UrlProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0048945F2AA0D1C400718990 /* UrlProtocolStub.swift */; };
 		004894682AA0D5E200718990 /* AddAccountIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004894672AA0D5E200718990 /* AddAccountIntegrationTests.swift */; };
@@ -304,6 +305,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		004056142B0FD47900AF6EE1 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		004056152B0FD50E00AF6EE1 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		004056162B0FD5ED00AF6EE1 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		0048945B2AA0D01700718990 /* AlamofireAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAdapter.swift; sourceTree = "<group>"; };
 		0048945F2AA0D1C400718990 /* UrlProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlProtocolStub.swift; sourceTree = "<group>"; };
 		004894652AA0D5E100718990 /* UseCasesIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseCasesIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -496,6 +500,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004056132B0FD45700AF6EE1 /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				004056162B0FD5ED00AF6EE1 /* Environment.swift */,
+				004056142B0FD47900AF6EE1 /* Debug.xcconfig */,
+				004056152B0FD50E00AF6EE1 /* Release.xcconfig */,
+			);
+			path = Env;
+			sourceTree = "<group>";
+		};
 		0048945D2AA0D0D300718990 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +653,7 @@
 		006BC1AF2B0F7D460082BAC5 /* MainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				004056132B0FD45700AF6EE1 /* Env */,
 				006BC2072B0FC6840082BAC5 /* Proxies */,
 				006BC2002B0FBE130082BAC5 /* Composers */,
 				006BC1FB2B0F80430082BAC5 /* Factories */,
@@ -1567,6 +1582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006BC1FF2B0F88940082BAC5 /* UseCaseFactory.swift in Sources */,
+				004056172B0FD5ED00AF6EE1 /* Environment.swift in Sources */,
 				006BC1B12B0F7D460082BAC5 /* AppDelegate.swift in Sources */,
 				006BC1B32B0F7D460082BAC5 /* SceneDelegate.swift in Sources */,
 				006BC2092B0FC6960082BAC5 /* WeakVarProxy.swift in Sources */,
@@ -2019,6 +2035,7 @@
 		};
 		006BC1D52B0F7D4E0082BAC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004056142B0FD47900AF6EE1 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -2051,6 +2068,7 @@
 		};
 		006BC1D62B0F7D4E0082BAC5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004056152B0FD50E00AF6EE1 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
