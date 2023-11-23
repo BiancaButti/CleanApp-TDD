@@ -35,6 +35,21 @@
 		006BC1BD2B0F7D480082BAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006BC1BB2B0F7D480082BAC5 /* LaunchScreen.storyboard */; };
 		006BC1D22B0F7D4E0082BAC5 /* MainLayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC1D12B0F7D4E0082BAC5 /* MainLayerUITests.swift */; };
 		006BC1D42B0F7D4E0082BAC5 /* MainLayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC1D32B0F7D4E0082BAC5 /* MainLayerUITestsLaunchTests.swift */; };
+		006BC1DE2B0F7FD90082BAC5 /* CleanApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEA42A9E1E760012A493 /* CleanApp.framework */; };
+		006BC1DF2B0F7FD90082BAC5 /* CleanApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEA42A9E1E760012A493 /* CleanApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1E22B0F7FD90082BAC5 /* DataLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEC32A9E22C20012A493 /* DataLayer.framework */; };
+		006BC1E32B0F7FD90082BAC5 /* DataLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEC32A9E22C20012A493 /* DataLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1E62B0F7FD90082BAC5 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEB32A9E1F040012A493 /* Domain.framework */; };
+		006BC1E72B0F7FD90082BAC5 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0086DEB32A9E1F040012A493 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1EA2B0F7FD90082BAC5 /* Infra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004BD84C2A9FA761008640B4 /* Infra.framework */; };
+		006BC1EB2B0F7FD90082BAC5 /* Infra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004BD84C2A9FA761008640B4 /* Infra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1EE2B0F7FD90082BAC5 /* PresentationLayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; };
+		006BC1EF2B0F7FD90082BAC5 /* PresentationLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1F22B0F7FDA0082BAC5 /* UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0093E7422AAB98F9001C30A3 /* UI.framework */; };
+		006BC1F32B0F7FDA0082BAC5 /* UI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0093E7422AAB98F9001C30A3 /* UI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1F62B0F7FDA0082BAC5 /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C593B82B0E742A00F49A8E /* Validation.framework */; };
+		006BC1F72B0F7FDA0082BAC5 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00C593B82B0E742A00F49A8E /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		006BC1FD2B0F80560082BAC5 /* SingUpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC1FC2B0F80560082BAC5 /* SingUpFactory.swift */; };
 		007461B02AA2545E00A3FAEE /* AccountModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD8452A9F84DA008640B4 /* AccountModelFactory.swift */; };
 		007461B12AA2548000A3FAEE /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83E2A9F83F9008640B4 /* TestExtensions.swift */; };
 		007461B32AA256BF00A3FAEE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007461B22AA256BF00A3FAEE /* LoadingView.swift */; };
@@ -135,6 +150,55 @@
 			remoteGlobalIDString = 006BC1AD2B0F7D450082BAC5;
 			remoteInfo = MainLayer;
 		};
+		006BC1E02B0F7FD90082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086DEA32A9E1E760012A493;
+			remoteInfo = CleanApp;
+		};
+		006BC1E42B0F7FD90082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086DEC22A9E22C20012A493;
+			remoteInfo = DataLayer;
+		};
+		006BC1E82B0F7FD90082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0086DEB22A9E1F040012A493;
+			remoteInfo = Domain;
+		};
+		006BC1EC2B0F7FD90082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004BD84B2A9FA761008640B4;
+			remoteInfo = Infra;
+		};
+		006BC1F02B0F7FDA0082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 004894772AA102D100718990;
+			remoteInfo = PresentationLayer;
+		};
+		006BC1F42B0F7FDA0082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0093E7412AAB98F9001C30A3;
+			remoteInfo = UI;
+		};
+		006BC1F82B0F7FDA0082BAC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00C593B72B0E742A00F49A8E;
+			remoteInfo = Validation;
+		};
 		0086DECC2A9E22C30012A493 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0086DE9B2A9E1E760012A493 /* Project object */;
@@ -187,6 +251,23 @@
 			dstSubfolderSpec = 10;
 			files = (
 				004BD8662A9FA884008640B4 /* DataLayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		006BC1FA2B0F7FDA0082BAC5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				006BC1F32B0F7FDA0082BAC5 /* UI.framework in Embed Frameworks */,
+				006BC1E72B0F7FD90082BAC5 /* Domain.framework in Embed Frameworks */,
+				006BC1E32B0F7FD90082BAC5 /* DataLayer.framework in Embed Frameworks */,
+				006BC1F72B0F7FDA0082BAC5 /* Validation.framework in Embed Frameworks */,
+				006BC1EF2B0F7FD90082BAC5 /* PresentationLayer.framework in Embed Frameworks */,
+				006BC1DF2B0F7FD90082BAC5 /* CleanApp.framework in Embed Frameworks */,
+				006BC1EB2B0F7FD90082BAC5 /* Infra.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +338,7 @@
 		006BC1CD2B0F7D4C0082BAC5 /* MainLayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainLayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006BC1D12B0F7D4E0082BAC5 /* MainLayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLayerUITests.swift; sourceTree = "<group>"; };
 		006BC1D32B0F7D4E0082BAC5 /* MainLayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		006BC1FC2B0F80560082BAC5 /* SingUpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpFactory.swift; sourceTree = "<group>"; };
 		007461B22AA256BF00A3FAEE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0086DEA42A9E1E760012A493 /* CleanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0086DEB32A9E1F040012A493 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -334,6 +416,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006BC1F22B0F7FDA0082BAC5 /* UI.framework in Frameworks */,
+				006BC1E62B0F7FD90082BAC5 /* Domain.framework in Frameworks */,
+				006BC1E22B0F7FD90082BAC5 /* DataLayer.framework in Frameworks */,
+				006BC1F62B0F7FDA0082BAC5 /* Validation.framework in Frameworks */,
+				006BC1EE2B0F7FD90082BAC5 /* PresentationLayer.framework in Frameworks */,
+				006BC1DE2B0F7FD90082BAC5 /* CleanApp.framework in Frameworks */,
+				006BC1EA2B0F7FD90082BAC5 /* Infra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,6 +648,7 @@
 		006BC1AF2B0F7D460082BAC5 /* MainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				006BC1FB2B0F80430082BAC5 /* Factories */,
 				006BC1B02B0F7D460082BAC5 /* AppDelegate.swift */,
 				006BC1B22B0F7D460082BAC5 /* SceneDelegate.swift */,
 				006BC1B92B0F7D480082BAC5 /* Assets.xcassets */,
@@ -582,6 +672,14 @@
 				006BC1D32B0F7D4E0082BAC5 /* MainLayerUITestsLaunchTests.swift */,
 			);
 			path = MainLayerUITests;
+			sourceTree = "<group>";
+		};
+		006BC1FB2B0F80430082BAC5 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				006BC1FC2B0F80560082BAC5 /* SingUpFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		007461AF2AA2543E00A3FAEE /* Helpers */ = {
@@ -1002,10 +1100,18 @@
 				006BC1AA2B0F7D450082BAC5 /* Sources */,
 				006BC1AB2B0F7D450082BAC5 /* Frameworks */,
 				006BC1AC2B0F7D450082BAC5 /* Resources */,
+				006BC1FA2B0F7FDA0082BAC5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				006BC1E12B0F7FD90082BAC5 /* PBXTargetDependency */,
+				006BC1E52B0F7FD90082BAC5 /* PBXTargetDependency */,
+				006BC1E92B0F7FD90082BAC5 /* PBXTargetDependency */,
+				006BC1ED2B0F7FD90082BAC5 /* PBXTargetDependency */,
+				006BC1F12B0F7FDA0082BAC5 /* PBXTargetDependency */,
+				006BC1F52B0F7FDA0082BAC5 /* PBXTargetDependency */,
+				006BC1F92B0F7FDA0082BAC5 /* PBXTargetDependency */,
 			);
 			name = MainLayer;
 			productName = MainLayer;
@@ -1480,6 +1586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006BC1FD2B0F80560082BAC5 /* SingUpFactory.swift in Sources */,
 				006BC1B12B0F7D460082BAC5 /* AppDelegate.swift in Sources */,
 				006BC1B32B0F7D460082BAC5 /* SceneDelegate.swift in Sources */,
 			);
@@ -1624,6 +1731,41 @@
 			isa = PBXTargetDependency;
 			target = 006BC1AD2B0F7D450082BAC5 /* MainLayer */;
 			targetProxy = 006BC1CE2B0F7D4C0082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1E12B0F7FD90082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086DEA32A9E1E760012A493 /* CleanApp */;
+			targetProxy = 006BC1E02B0F7FD90082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1E52B0F7FD90082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086DEC22A9E22C20012A493 /* DataLayer */;
+			targetProxy = 006BC1E42B0F7FD90082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1E92B0F7FD90082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0086DEB22A9E1F040012A493 /* Domain */;
+			targetProxy = 006BC1E82B0F7FD90082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1ED2B0F7FD90082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004BD84B2A9FA761008640B4 /* Infra */;
+			targetProxy = 006BC1EC2B0F7FD90082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1F12B0F7FDA0082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 004894772AA102D100718990 /* PresentationLayer */;
+			targetProxy = 006BC1F02B0F7FDA0082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1F52B0F7FDA0082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0093E7412AAB98F9001C30A3 /* UI */;
+			targetProxy = 006BC1F42B0F7FDA0082BAC5 /* PBXContainerItemProxy */;
+		};
+		006BC1F92B0F7FDA0082BAC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00C593B72B0E742A00F49A8E /* Validation */;
+			targetProxy = 006BC1F82B0F7FDA0082BAC5 /* PBXContainerItemProxy */;
 		};
 		0086DECD2A9E22C30012A493 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1913,9 +2055,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MainLayer/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1943,9 +2085,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MainLayer/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
