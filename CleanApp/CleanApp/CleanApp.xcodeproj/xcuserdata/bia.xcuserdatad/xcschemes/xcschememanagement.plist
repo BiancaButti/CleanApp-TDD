@@ -32,7 +32,7 @@
 		<key>MainLayer.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>7</integer>
 		</dict>
 		<key>PresentationLayer.xcscheme_^#shared#^_</key>
 		<dict>
@@ -42,7 +42,7 @@
 		<key>UI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>8</integer>
 		</dict>
 		<key>UseCasesIntegrationTests.xcscheme_^#shared#^_</key>
 		<dict>
@@ -78,6 +78,16 @@
 			<true/>
 		</dict>
 		<key>004BD8522A9FA762008640B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>006BC1AD2B0F7D450082BAC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>006BC1C22B0F7D480082BAC5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
