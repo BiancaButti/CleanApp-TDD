@@ -50,7 +50,7 @@
 		006BC1F72B0F7FDA0082BAC5 /* Validation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00C593B82B0E742A00F49A8E /* Validation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		006BC1FF2B0F88940082BAC5 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC1FE2B0F88940082BAC5 /* UseCaseFactory.swift */; };
 		006BC2022B0FBE260082BAC5 /* SignUpComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC2012B0FBE260082BAC5 /* SignUpComposer.swift */; };
-		006BC2042B0FC00C0082BAC5 /* SignUpIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC2032B0FC00C0082BAC5 /* SignUpIntegrationTests.swift */; };
+		006BC2042B0FC00C0082BAC5 /* SignUpIComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC2032B0FC00C0082BAC5 /* SignUpIComposerTests.swift */; };
 		006BC2052B0FC0890082BAC5 /* AddAccountSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E7362AAB962A001C30A3 /* AddAccountSpy.swift */; };
 		006BC2062B0FC1040082BAC5 /* TestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004BD83E2A9F83F9008640B4 /* TestExtensions.swift */; };
 		006BC2092B0FC6960082BAC5 /* WeakVarProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006BC2082B0FC6960082BAC5 /* WeakVarProxy.swift */; };
@@ -339,7 +339,7 @@
 		006BC1D32B0F7D4E0082BAC5 /* MainLayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		006BC1FE2B0F88940082BAC5 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
 		006BC2012B0FBE260082BAC5 /* SignUpComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpComposer.swift; sourceTree = "<group>"; };
-		006BC2032B0FC00C0082BAC5 /* SignUpIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIntegrationTests.swift; sourceTree = "<group>"; };
+		006BC2032B0FC00C0082BAC5 /* SignUpIComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpIComposerTests.swift; sourceTree = "<group>"; };
 		006BC2082B0FC6960082BAC5 /* WeakVarProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakVarProxy.swift; sourceTree = "<group>"; };
 		007461B22AA256BF00A3FAEE /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0086DEA42A9E1E760012A493 /* CleanApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CleanApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -510,6 +510,13 @@
 			path = Env;
 			sourceTree = "<group>";
 		};
+		004056182B0FE06C00AF6EE1 /* Composers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Composers;
+			sourceTree = "<group>";
+		};
 		0048945D2AA0D0D300718990 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +676,8 @@
 		006BC1C62B0F7D4B0082BAC5 /* MainLayerTests */ = {
 			isa = PBXGroup;
 			children = (
-				006BC2032B0FC00C0082BAC5 /* SignUpIntegrationTests.swift */,
+				004056182B0FE06C00AF6EE1 /* Composers */,
+				006BC2032B0FC00C0082BAC5 /* SignUpIComposerTests.swift */,
 			);
 			path = MainLayerTests;
 			sourceTree = "<group>";
@@ -1596,7 +1604,7 @@
 			files = (
 				006BC2052B0FC0890082BAC5 /* AddAccountSpy.swift in Sources */,
 				006BC2062B0FC1040082BAC5 /* TestExtensions.swift in Sources */,
-				006BC2042B0FC00C0082BAC5 /* SignUpIntegrationTests.swift in Sources */,
+				006BC2042B0FC00C0082BAC5 /* SignUpIComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
