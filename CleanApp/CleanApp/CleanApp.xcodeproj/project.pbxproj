@@ -80,6 +80,7 @@
 		0093E7582AAB99FE001C30A3 /* PresentationLayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004894782AA102D100718990 /* PresentationLayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0093E75D2AAB9C48001C30A3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */; };
 		009862582B10C21200EB2A0C /* TestFactories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0093E73B2AAB9718001C30A3 /* TestFactories.swift */; };
+		0098625B2B10C8F100EB2A0C /* MainDispatchQueueDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098625A2B10C8F100EB2A0C /* MainDispatchQueueDecorator.swift */; };
 		00C593B02B0E6C9500F49A8E /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C593AF2B0E6C9500F49A8E /* UIViewControllerExtensions.swift */; };
 		00C593B22B0E6FAB00F49A8E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C593B12B0E6FAB00F49A8E /* Storyboarded.swift */; };
 		00C593C02B0E742C00F49A8E /* Validation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C593B82B0E742A00F49A8E /* Validation.framework */; };
@@ -364,6 +365,7 @@
 		0093E7492AAB98FA001C30A3 /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0093E74E2AAB98FA001C30A3 /* SignUpViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerTests.swift; sourceTree = "<group>"; };
 		0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0098625A2B10C8F100EB2A0C /* MainDispatchQueueDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDispatchQueueDecorator.swift; sourceTree = "<group>"; };
 		00C593AF2B0E6C9500F49A8E /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		00C593B12B0E6FAB00F49A8E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		00C593B82B0E742A00F49A8E /* Validation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Validation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -661,6 +663,7 @@
 		006BC1AF2B0F7D460082BAC5 /* MainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				009862592B10C8DB00EB2A0C /* Decorators */,
 				004056132B0FD45700AF6EE1 /* Env */,
 				006BC2072B0FC6840082BAC5 /* Proxies */,
 				006BC2002B0FBE130082BAC5 /* Composers */,
@@ -914,6 +917,14 @@
 				0093E75C2AAB9C48001C30A3 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		009862592B10C8DB00EB2A0C /* Decorators */ = {
+			isa = PBXGroup;
+			children = (
+				0098625A2B10C8F100EB2A0C /* MainDispatchQueueDecorator.swift */,
+			);
+			path = Decorators;
 			sourceTree = "<group>";
 		};
 		00C593AE2B0E6C7800F49A8E /* Helpers */ = {
@@ -1595,6 +1606,7 @@
 				006BC1B12B0F7D460082BAC5 /* AppDelegate.swift in Sources */,
 				006BC1B32B0F7D460082BAC5 /* SceneDelegate.swift in Sources */,
 				006BC2092B0FC6960082BAC5 /* WeakVarProxy.swift in Sources */,
+				0098625B2B10C8F100EB2A0C /* MainDispatchQueueDecorator.swift in Sources */,
 				006BC2022B0FBE260082BAC5 /* SignUpComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
