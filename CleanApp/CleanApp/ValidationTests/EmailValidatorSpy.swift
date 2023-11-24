@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import PresentationLayer
+import Validation
 
 class EmailValidatorSpy: EmailValidator {
     var isValid = true

@@ -31,16 +31,22 @@
 		</dict>
 		<key>MainLayer.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 		<key>PresentationLayer.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
 		<key>UI.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
@@ -51,6 +57,8 @@
 		</dict>
 		<key>Validation.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
@@ -103,6 +111,16 @@
 			<true/>
 		</dict>
 		<key>0086DEC92A9E22C30012A493</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0093E7412AAB98F9001C30A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0093E7482AAB98FA001C30A3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

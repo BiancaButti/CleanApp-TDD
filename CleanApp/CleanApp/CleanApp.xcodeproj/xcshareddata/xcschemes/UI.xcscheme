@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00C593B72B0E742A00F49A8E"
-               BuildableName = "Validation.framework"
-               BlueprintName = "Validation"
+               BlueprintIdentifier = "0093E7412AAB98F9001C30A3"
+               BuildableName = "UI.framework"
+               BlueprintName = "UI"
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,17 +26,16 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      enableThreadSanitizer = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO"
-            testExecutionOrdering = "random">
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00C593BE2B0E742B00F49A8E"
-               BuildableName = "ValidationTests.xctest"
-               BlueprintName = "ValidationTests"
+               BlueprintIdentifier = "0093E7482AAB98FA001C30A3"
+               BuildableName = "UITests.xctest"
+               BlueprintName = "UITests"
                ReferencedContainer = "container:CleanApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -62,9 +61,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "00C593B72B0E742A00F49A8E"
-            BuildableName = "Validation.framework"
-            BlueprintName = "Validation"
+            BlueprintIdentifier = "0093E7412AAB98F9001C30A3"
+            BuildableName = "UI.framework"
+            BlueprintName = "UI"
             ReferencedContainer = "container:CleanApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
