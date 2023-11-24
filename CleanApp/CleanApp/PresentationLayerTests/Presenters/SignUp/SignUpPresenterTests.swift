@@ -19,7 +19,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Nome"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp(name: nil))
+        sut.signUp(viewModel: makeSignUpViewModel(name: nil))
         wait(for: [exp], timeout: 1)
     }
 
@@ -31,7 +31,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Email"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp(email: nil))
+        sut.signUp(viewModel: makeSignUpViewModel(email: nil))
         wait(for: [exp], timeout: 1)
     }
     
@@ -43,7 +43,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Password"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp(password: nil))
+        sut.signUp(viewModel: makeSignUpViewModel(password: nil))
         wait(for: [exp], timeout: 1)
     }
     
@@ -55,7 +55,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeRequiredAlertViewModel(fieldName: "Password Confirmation"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp(passwordConfirmation: nil))
+        sut.signUp(viewModel: makeSignUpViewModel(passwordConfirmation: nil))
         wait(for: [exp], timeout: 1)
     }
     
@@ -67,7 +67,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeInvalidAlertViewModel(fieldName: "Confirmar Senha"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp(passwordConfirmation: "Password Confirmation"))
+        sut.signUp(viewModel: makeSignUpViewModel(passwordConfirmation: "Password Confirmation"))
         wait(for: [exp], timeout: 1)
     }
     
@@ -81,21 +81,21 @@ class SignUpPresenterTests: XCTestCase {
             exp.fulfill()
         }
         emailValidatorSpy.simulateInvalidEmail()
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         wait(for: [exp], timeout: 1)
     }
     
     func test_signUp_shoul_call_emailValidator_with_correct_email() {
         let emailValidatorSpy = EmailValidatorSpy()
         let sut = makeSut(emailValidatorSpy: emailValidatorSpy)
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         XCTAssertEqual(emailValidatorSpy.email, "bianca@mail.com")
     }
     
     func test_signUp_shoul_call_addAccount_with_correct_values() {
         let addAccountSpy = AddAccountSpy()
         let sut = makeSut(addAccount: addAccountSpy)
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         XCTAssertEqual(addAccountSpy.addAccountModel, makeAddAccountModel())
     }
     
@@ -108,7 +108,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeErrorAlertViewModel(fieldName: "Algo inesperado aconteceu. Tente novamente em alguns instantes"))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         addAccountSpy.completeWithError(.unexpected)
         wait(for: [exp], timeout: 1)
     }
@@ -122,7 +122,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, LoadingViewModel(isLoading: true))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         wait(for: [exp], timeout: 1)
         let exp2 = expectation(description: "waiting")
         loadingViewSpy.observe { viewModel in
@@ -142,7 +142,7 @@ class SignUpPresenterTests: XCTestCase {
             XCTAssertEqual(viewModel, makeSuccessAlertViewModel(fieldName: "Conta criada com sucesso."))
             exp.fulfill()
         }
-        sut.signUp(viewModel: makeSignUp())
+        sut.signUp(viewModel: makeSignUpViewModel())
         addAccountSpy.completeWithAccount(makeAccountModel())
         wait(for: [exp], timeout: 1)
     }

@@ -8,7 +8,7 @@
 import Foundation
 import PresentationLayer
 
-func makeSignUp(name: String? = "Bianca", email: String? = "bianca@mail.com",
+func makeSignUpViewModel(name: String? = "Bianca", email: String? = "bianca@mail.com",
                 password: String? = "123456", passwordConfirmation: String? = "123456") -> SignUpViewModel {
     return SignUpViewModel(name: name,
                            email: email,
