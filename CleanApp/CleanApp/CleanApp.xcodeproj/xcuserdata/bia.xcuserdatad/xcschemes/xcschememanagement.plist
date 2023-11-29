@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Core.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>DataLayer.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -22,7 +27,7 @@
 		<key>Domain.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Infra.xcscheme_^#shared#^_</key>
 		<dict>
@@ -101,6 +106,11 @@
 			<true/>
 		</dict>
 		<key>0086DEA32A9E1E760012A493</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0086DEB22A9E1F040012A493</key>
 		<dict>
 			<key>primary</key>
 			<true/>
